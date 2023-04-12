@@ -1,13 +1,15 @@
 <?php
-// Initiate the autoloader.
+
+// Inicia el autocargador.
 require_once 'ReCaptcha/autoload.php';
 
-// Register You API keys at https://www.google.com/recaptcha/admin
-// And write it here
+
+// Hay que registrar las claves API en https://www.google.com/recaptcha/admin
+// Y copiarlas  
 $siteKey = '6LfZlSETAAAAAC5VW4R4tQP8Am_to4bM3dddxkEt';
 $secret = '6LfZlSETAAAAAOi4lh7GHcSOO0pbXnAMJRhnsr7O';
 
-// reCAPTCHA supported 40+ languages listed here: https://developers.google.com/recaptcha/docs/language
+// reCAPTCHA admite más de 40 idiomas enumerados aquí: https://developers.google.com/recaptcha/docs/language
 $lang = 'en';
 
 // If No key
@@ -15,18 +17,18 @@ if ($siteKey === '' || $secret === ''):
   die('CPT001');
 elseif (isset($_POST['g-recaptcha-response'])):
 
-  // If the form submission includes the "g-captcha-response" field
-  // Create an instance of the service using your secret
+  // Si el envío del formulario incluye el campo "g-captcha-response"
+  // Crea una instancia del servicio usando el pass
   $recaptcha = new \ReCaptcha\ReCaptcha($secret);
 
-  // Make the call to verify the response and also pass the user's IP address
+  // Realiza la llamada para verificar la respuesta y también pasa la dirección IP del usuario
   $resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
 
   if ($resp->isSuccess()):
-    // If the response is a success, that's it!
+    // Si la respuesta es un éxito.
     die('CPT000');
   else:
-    // Something wrong
+    // Problemas
     die('CPT002');
   endif;
 

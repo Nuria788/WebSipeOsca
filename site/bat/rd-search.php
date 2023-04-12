@@ -3,10 +3,10 @@ if (!isset($_GET['s'])) {
   die('You must define a search term!');
 }
 
-$highlight = true;//highlight results or not
-$search_in = array('html', 'htm');//allowable filetypes to search in
-$search_dir = '..';//starting directory
-$recursive = true;//should it search recursively or not
+$highlight = true;//resaltar resultados 
+$search_in = array('html', 'htm');//tipos de archivos permitidos para buscar
+$search_dir = '..';//directorio de inicio
+$recursive = true;//debería buscar recursivamente
 define('SIDE_CHARS', 15);
 $file_count = 0;
 $search_term = mb_strtolower($_GET['s'], 'UTF-8');
@@ -42,10 +42,10 @@ foreach ($files as $file) {
   }
 
   $contents = file_get_contents($file);
-  preg_match("/\<title\>(.*)\<\/title\>/", $contents, $page_title); //getting page title
-  if (preg_match("#\<body.*\>(.*)\<\/body\>#si", $contents, $body_content)) { //getting content only between <body></body> tags
-    $clean_content = strip_tags($body_content[0]); //remove html tags
-    $clean_content = preg_replace('/\s+/', ' ', $clean_content); //remove duplicate whitespaces, carriage returns, tabs, etc
+  preg_match("/\<title\>(.*)\<\/title\>/", $contents, $page_title); //obtener el título de la página
+  if (preg_match("#\<body.*\>(.*)\<\/body\>#si", $contents, $body_content)) { // obtener contenido solo entre<body></body> tags
+    $clean_content = strip_tags($body_content[0]); //eliminar etiquetas html
+    $clean_content = preg_replace('/\s+/', ' ', $clean_content); // eliminar espacios en blanco duplicados, retornos de carro, tabulaciones, etc.
 
     $found = strpos_recursive(mb_strtolower($clean_content, 'UTF-8'), $search_term);
 
@@ -93,7 +93,7 @@ foreach ($files as $file) {
 
 if ($file_count > 0) {
 
-//Sort final result
+// Ordenar resultado final
   foreach ($final_result as $key => $row) {
     $search_result[$key] = $row['search_result'];
   }
@@ -166,7 +166,7 @@ if ($file_count > 0) {
   </div>
 
 <?php
-//lists all the files in the directory given (and sub-directories if it is enabled)
+//enumera todos los archivos en el directorio dado (y subdirectorios si está habilitado)
 function list_files($dir)
 {
   global $recursive, $search_in;
@@ -191,7 +191,7 @@ function list_files($dir)
   return $result;
 }
 
-//returns the extention of a file
+//devuelve la extensión de un archivo
 function get_file_extension($filename)
 {
   $result = '';

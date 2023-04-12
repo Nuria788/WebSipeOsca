@@ -1,11 +1,5 @@
 @charset "UTF-8";
-/*
-* Trunk version 2.0.0
-*/
-/*
-*
-* Contexts
-*/
+
 a:focus,
 button:focus {
 	outline: none !important;
@@ -2241,7 +2235,7 @@ p + .list-custom {
 
 /*
 *
-* Images
+* Imagenes
 */
 img {
 	display: inline-block;
@@ -2338,7 +2332,7 @@ img {
 
 /*
 *
-* Icons
+* Iconos
 */
 .icon {
 	display: inline-block;
@@ -2361,7 +2355,7 @@ img {
 
 /*
 *
-* Dividers
+* Divisores
 */
 hr {
 	margin-top: 0;
@@ -2521,7 +2515,7 @@ hr {
 
 /*
 *
-* Buttons
+*Botones
 */
 .button {
 	position: relative;
@@ -3985,7 +3979,8 @@ hr {
 
 /*
 *
-* Form styles
+* Estilos de formulario
+
 */
 .rd-form {
 	position: relative;
@@ -4626,7 +4621,7 @@ textarea.textarea-lg {
 
 /*
 *
-* Posts
+* Publicaciones
 */
 .post {
 	text-align: left;
@@ -5625,7 +5620,8 @@ textarea.textarea-lg {
 
 /*
 *
-* Quotes
+* 
+*Citas
 */
 .quote-classic {
 	position: relative;
@@ -7267,7 +7263,7 @@ textarea.textarea-lg {
 
 /*
 *
-* Breadcrumbs
+* Enlaces a cada página anterior por la que navegó el usuario y muestra la ubicación actual del usuario en un sitio web.
 */
 .breadcrumbs-custom {
 	position: relative;
@@ -7368,7 +7364,7 @@ textarea.textarea-lg {
 
 /*
 *
-* Snackbars
+* Información sobre herramientas/ventanas emergentes para mostrar un mensaje en la parte inferior de la pantalla.
 */
 .snackbars {
 	padding: 9px 16px;
@@ -7415,7 +7411,7 @@ textarea.textarea-lg {
 
 /*
 *
-* Footers
+* Footer
 */
 .footer-classic {
 	color: rgba(255, 255, 255, 0.5);
@@ -8298,7 +8294,7 @@ textarea.textarea-lg {
 
 /**
 *
-* Card
+* Tarjetas
 */
 .card-form {
 	background: #ffffff;
@@ -8483,7 +8479,7 @@ textarea.textarea-lg {
 
 /*
 *
-* Product
+* Productos
 */
 .product {
 	position: relative;
@@ -9458,7 +9454,7 @@ h5 + .list-popular-product {
 
 /*
 *
-* Headings
+* header
 */
 .title-classic {
 	display: flex;
@@ -9681,7 +9677,7 @@ h2.title-modern > span {
 
 /*
 *
-* Services
+* Servicios
 */
 .services-classic {
 	text-align: left;
@@ -10439,7 +10435,7 @@ h2.title-modern > span {
 
 /*
 *
-* Page layout
+* Diseño de página
 */
 .page {
 	position: relative;
@@ -10478,7 +10474,7 @@ html.boxed body {
 
 /*
 *
-* Text styling
+* Diseño de página
 */
 .text-italic {
 	font-style: italic;
@@ -10664,7 +10660,7 @@ html.boxed body {
 
 /*
 *
-* Offsets
+* Compensaciones
 */
 * + p {
 	margin-top: 15px;
@@ -11116,7 +11112,7 @@ h4 + .instafeed {
 
 /*
 *
-* Sections
+* Secciones
 */
 .section-xs {
 	padding-top: 40px;
@@ -11253,7 +11249,7 @@ html [class*='section-'].section-top-0 {
 
 /*
 *
-* Grid modules
+* Diseño de cuadrícula CSS dividir una página
 */
 .grid-demonstration {
 	text-align: left;
@@ -11540,7 +11536,8 @@ html [class*='section-'].section-top-0 {
 }
 
 /**
-* Light Backgrounds
+* Fondos claros
+
 */
 .bg-default {
 	background-color: #ffffff;
@@ -11586,7 +11583,7 @@ html [class*='section-'].section-top-0 {
 }
 
 /**
-* Dark Backgrounds
+* Fondos oscuros
 */
 .bg-gray-dark {
 	background-color: #2c343b;
@@ -11600,7 +11597,7 @@ html [class*='section-'].section-top-0 {
 }
 
 /**
-* Background Image
+* Background Imagenes
 */
 [class*='bg-'] {
 	background-size: cover;
@@ -11742,7 +11739,7 @@ html [class*='section-'].section-top-0 {
 
 /*
 *
-* Utilities custom
+* Utilidades personalizadas
 */
 .height-fill {
 	position: relative;
@@ -12443,7 +12440,7 @@ html:not(.lt-ie10) .not-animated {
 
 /*
 *
-* ToTop
+* Hasta arriba
 */
 .ui-to-top {
 	position: fixed;
@@ -12500,7 +12497,8 @@ html.tablet .ui-to-top {
 
 /*
 *
-* RD Navbar
+* 
+Barra de navegación RD
 */
 @keyframes rd-navbar-slide-down {
 	0% {
@@ -12740,7 +12738,8 @@ html.tablet .ui-to-top {
 }
 
 /*
-* @subsection  RD Navbar Static
+* @subsection RD Navbar estática
+
 */
 .rd-navbar-static {
 	display: block;
@@ -13614,8 +13613,7 @@ html.tablet .ui-to-top {
 
 /*
 *
-* RD Navbar Fixed
-*/
+* RD Navbar fijo*/
 .rd-navbar-fixed {
 	display: block;
 }
@@ -14106,7 +14104,7 @@ html.rd-navbar-fixed-linked .page-header {
 
 /*
 *
-* RD Navbar Sidebar
+* Barra lateral de la barra de navegación RD
 */
 .rd-navbar-sidebar {
 	display: block;
@@ -14492,7 +14490,8 @@ html.rd-navbar-fixed-linked .page-header {
 
 /**
 *
-* RD Navbar Classic
+* 
+RD barra de navegación clásica
 * =====================================================
 */
 .rd-navbar-classic.rd-navbar-static .rd-navbar-main-outer {
@@ -14872,7 +14871,7 @@ html.rd-navbar-fixed-linked .page-header {
 	overflow: hidden;
 	height: auto;
 	width: 100%;
-	/* Fix of Webkit flickering */
+	/* Corrección del parpadeo de Webkit */
 	z-index: 1;
 }
 
@@ -14915,7 +14914,7 @@ html.rd-navbar-fixed-linked .page-header {
 	margin: 0 auto;
 }
 
-/* a11y */
+/*  */
 .swiper-container .swiper-notification {
 	position: absolute;
 	left: 0;
@@ -16062,7 +16061,7 @@ html.rd-navbar-fixed-linked .page-header {
 
 /*
 *
-* RD Google Map
+* Google Map
 * --------------------------------------------------
 */
 .google-map {
@@ -16093,7 +16092,8 @@ html.rd-navbar-fixed-linked .page-header {
 
 /*
 *
-* Isotope
+* 
+Isótopo
 */
 @keyframes sprite-animation {
 	from {
@@ -17142,7 +17142,7 @@ h1 + .tabs-line {
 
 /*
 *
-* Counter
+* Contador
 */
 .counter-modern {
 	position: relative;
@@ -17678,7 +17678,7 @@ h1 + .tabs-line {
 
 /*
 *
-* Owl Carousel
+* Carousel
 */
 .owl-carousel .animated {
 	animation-duration: 1000ms;
@@ -17707,20 +17707,21 @@ h1 + .tabs-line {
 }
 
 /* 
- * 	Owl Carousel - Auto Height Plugin
+ * 	 Carousel - automática
+
  */
 .owl-height {
 	transition: height 500ms ease-in-out;
 }
 
 /* 
- *  Core Owl Carousel CSS File
+ *  Archivo CSS del carrusel Core Owl
  */
 .owl-carousel {
 	display: none;
 	width: 100%;
 	-webkit-tap-highlight-color: transparent;
-	/* position relative and z-index fix webkit rendering fonts issue */
+	/* posición relativa y corrección del índice z problema de fuentes de renderizado webkit*/
 	position: relative;
 	z-index: 1;
 }
@@ -17742,7 +17743,8 @@ h1 + .tabs-line {
 .owl-carousel .owl-stage-outer {
 	position: relative;
 	overflow: hidden;
-	/* fix for flashing background */
+	/* 
+arreglo para el fondo intermitente */
 	-webkit-transform: translate3d(0px, 0px, 0px);
 }
 
@@ -17796,13 +17798,13 @@ h1 + .tabs-line {
 	float: right;
 }
 
-/* No Js */
+/* sin Js */
 .no-js .owl-carousel {
 	display: block;
 }
 
 /* 
- * 	Owl Carousel - Lazy Load Plugin
+ * 	Carrusel
  */
 .owl-carousel .owl-item .owl-lazy {
 	opacity: 0;
@@ -17810,7 +17812,7 @@ h1 + .tabs-line {
 }
 
 /* 
- * 	Owl Carousel - Video Plugin
+ * 	Carrusel - Video 
  */
 .owl-carousel .owl-video-wrapper {
 	position: relative;
@@ -17860,7 +17862,7 @@ h1 + .tabs-line {
 }
 
 /*
- * Owl Navigation
+ * Navigation
  */
 .owl-nav.disabled {
 	display: none !important;
@@ -17898,7 +17900,7 @@ h1 + .tabs-line {
 }
 
 /*
- * Owl Pagination
+ * Paginacion
  */
 .owl-dots {
 	position: absolute;
@@ -19585,7 +19587,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 /*
 *
-* Material Parallax
+*  Parallax
 */
 .parallax-container {
 	position: relative;
@@ -19622,10 +19624,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 /*
 *
-* Select 2
-*/
-/*
-Version: 3.5.4 Timestamp: Sun Aug 30 13:30:32 EDT 2015
 */
 .select2-container {
 	position: relative;
@@ -19650,9 +19648,9 @@ Version: 3.5.4 Timestamp: Sun Aug 30 13:30:32 EDT 2015
 .select2-search,
 .select2-search input {
 	/*
-    Force border-box so that % widths fit the parent
-    container without overlap because of margin/padding.
-    More Info : http://www.quirksmode.org/css/box.html
+    Forzar cuadro de borde para que el % de ancho se ajuste al padre
+    contenedor sin superposición debido al margen/relleno.
+  http://www.quirksmode.org/css/box.html
   */
 	-webkit-box-sizing: border-box;
 	/* webkit */
@@ -19805,7 +19803,7 @@ Version: 3.5.4 Timestamp: Sun Aug 30 13:30:32 EDT 2015
 	width: 1px;
 }
 
-/* results */
+/* resultados */
 .select2-results {
 	padding: 4px 4px;
 	position: relative;
@@ -19855,7 +19853,7 @@ Version: 3.5.4 Timestamp: Sun Aug 30 13:30:32 EDT 2015
 }
 
 /*
-disabled look for disabled choices in the results dropdown
+menú desplegable 
 */
 .select2-results .select2-disabled.select2-highlighted {
 	color: #ffffff;
@@ -19883,7 +19881,7 @@ disabled look for disabled choices in the results dropdown
 	display: list-item;
 }
 
-/* disabled styles */
+/* estilos deshabilitados */
 .select2-container.select2-container-disabled .select2-choice {
 	background-color: #f4f4f4;
 	background-image: none;
@@ -19901,7 +19899,8 @@ disabled look for disabled choices in the results dropdown
 	display: none;
 }
 
-/* multiselect */
+/* 
+selección múltiple */
 .select2-container-multi {
 	display: flex;
 	align-items: stretch;
@@ -19987,7 +19986,7 @@ disabled look for disabled choices in the results dropdown
 	left: 3px;
 }
 
-/* disabled styles */
+/* estilos deshabilitados */
 .select2-container-multi.select2-container-disabled .select2-choices {
 	background-color: #f4f4f4;
 	background-image: none;
@@ -20007,7 +20006,7 @@ disabled look for disabled choices in the results dropdown
 	background: none;
 }
 
-/* end multiselect */
+/* finalizar multiselección*/
 .select2-result-selectable .select2-match,
 .select2-result-unselectable .select2-match {
 	text-decoration: underline;
@@ -20180,7 +20179,7 @@ disabled look for disabled choices in the results dropdown
 
 /*
 *
-* Modal custom
+* cuadro modal 
 */
 .modal-open .modal {
 	padding-right: 0 !important;
