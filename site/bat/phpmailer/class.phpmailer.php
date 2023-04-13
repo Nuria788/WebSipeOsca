@@ -189,15 +189,15 @@ class PHPMailer
     public $MessageDate = '';
 
     /**
-     * SMTP hosts.
-     * Either a single hostname or multiple semicolon-delimited hostnames.
-     * You can also specify a different port
-     * for each host by using this format: [hostname:port]
-     * (e.g. "smtp1.example.com:25;smtp2.example.com").
-     * You can also specify encryption type, for example:
-     * (e.g. "tls://smtp1.example.com:587;ssl://smtp2.example.com:465").
-     * Hosts will be tried in order.
-     * @type string
+     *anfitriones SMTP.
+     * Ya sea un solo nombre de host o múltiples nombres de host delimitados por punto y coma.
+     * También puede especificar un puerto diferente
+     * para cada host usando este formato: [hostname:port]
+     * (por ejemplo, "smtp1.example.com:25;smtp2.example.com").
+     * También puede especificar el tipo de cifrado, por ejemplo:
+     * (por ejemplo, "tls://smtp1.example.com:587;ssl://smtp2.example.com:465").
+     * Los anfitriones se probarán en orden.
+     * 
      */
     public $Host = 'localhost';
 
